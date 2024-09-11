@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+/* Default Light Mode Styles */
+
+
+/* Dark Mode Styles */
+[data-theme='dark'] {
+  --background-color: #121212;
+ 
+  --button-hover: scale(1.05);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  background: var(--button-background);
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: var(--button-hover);
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-btn {
+  position: fixed;
+  bottom: 20px; /* Position at the bottom of the viewport */
+  right: 20px;  /* Position from the right side */
+  width: 50px;  /* Set a specific width */
+  height: 50px; /* Set a specific height */
+  background-color: var(--button-background);
+  border: none;
+  border-radius: 50%; /* Make the button round */
+  cursor: pointer;
+  z-index: 1000; /* Ensure the button is above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  display: flex;
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  overflow: hidden; /* Ensure the icon doesn't overflow the button bounds */
+}
+
+/* Ensure the icon covers the button and retains its shape */
+.theme-toggle-btn img {
+  width: 100%;  /* Make the icon cover the button area */
+  height: 100%; /* Make the icon cover the button area */
+  object-fit: contain; /* Ensure the icon retains its aspect ratio */
+  border-radius: 50%; /* Ensure the icon itself is rounded if applicable */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .theme-toggle-btn {
+    width: 40px; /* Adjust size for smaller screens */
+    height: 40px; /* Adjust size for smaller screens */
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .theme-toggle-btn img {
+    width: 100%; /* Ensure the icon still covers the button area */
+    height: 100%; /* Ensure the icon still covers the button area */
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.translucent-background {
+  background-color: rgba(255, 192, 203, 0.6); /* Adjust the opacity (0.6) as needed */
+}
