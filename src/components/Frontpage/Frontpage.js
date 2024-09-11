@@ -8,10 +8,10 @@ function FrontPage() {
   return (
     <div>
      
+        <HeroSection />
         <CarouselSection />
-   
-      <FadeInSection>
         <AboutUsSection />
+     
     
     </div>
   );
