@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth, db } from "../components/Firebase/Firebase"; 
-import { logOut } from "../components/Auth/Auth"; 
+import { auth, db } from "../../components/Firebase/Firebase"; 
+import { logOut } from "../../components/Auth/Auth"; 
 import { doc, getDoc } from "firebase/firestore";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 
 const NAVBAR_CLASSES = {
   container: "w-full px-4 sm:px-6 lg:px-8",

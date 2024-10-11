@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import FrontPage from './components/Frontpage/Frontpage';
 import { AuthProvider } from './components/Auth/Auth';
 import SignUpCompany from './components/Pages/SignUpCompany';
@@ -57,8 +57,9 @@ const App = () => {
             <Route path="/payment" element={<Payment />} />
             <Route path="/paynow" element={<PayNow />} />
             <Route path="/our-team" element={<OurTeam />} />
+         
           </Routes>
-        
+          <Footer />
         </div>
       </Router>
     </AuthProvider>

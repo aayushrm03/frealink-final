@@ -26,24 +26,6 @@ function OurTeam() {
         <div className='p-6 bg-white rounded-lg shadow-md border border-gray-200 text-center hover:scale-105 hover:shadow-custom-kaala transition-all duration-1000 ease-in-out'>
           <div 
             style={{
-              backgroundImage: `url(${ishaan})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              borderRadius: "50%"
-            }}
-            className='h-48 w-48 mx-auto mb-4'
-          ></div>
-          <h3 className='text-2xl font-medium'>Ishaan Rawat</h3>
-          <h5 className='text-xl text-slate-600'>Project Lead</h5>
-          <p className='text-xl'>
-            <a href="https://www.linkedin.com/in/ishaan-rawat-a88946267">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </p>
-        </div>
-        <div className='p-6 bg-white rounded-lg shadow-md border border-gray-200 text-center hover:scale-105 hover:shadow-custom-kaala transition-all duration-1000 ease-in-out'>
-          <div 
-            style={{
               backgroundImage: `url(${aayushi})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -52,9 +34,29 @@ function OurTeam() {
             className='h-48 w-48 mx-auto mb-4'
           ></div>
           <h3 className='text-2xl font-medium'>Aayushi Sharma</h3>
-          <h5 className='text-xl text-slate-600'>Developer</h5>
+          <h5 className='text-xl text-slate-600'>Project Lead</h5>
+          <h5 className='text-xl text-slate-600'>Mern Stack Developer</h5>
           <p className='text-xl'>
             <a href="https://www.linkedin.com/in/aayushi-sharma-8ab2942b7/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </p>
+        </div>
+        <div className='p-6 bg-white rounded-lg shadow-md border border-gray-200 text-center hover:scale-105 hover:shadow-custom-kaala transition-all duration-1000 ease-in-out'>
+          <div 
+            style={{
+              backgroundImage: `url(${ishaan})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              borderRadius: "50%"
+            }}
+            className='h-48 w-48 mx-auto mb-4'
+          ></div>
+          <h3 className='text-2xl font-medium'>Ishan Rawat</h3>
+          <h5 className='text-xl text-slate-600'>Developer</h5>
+          <p className='text-xl'>
+            <a href="https://www.linkedin.com/in/ishaan-rawat-a88946267">
+            
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </p>
